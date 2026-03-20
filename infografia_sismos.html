@@ -156,7 +156,23 @@
   /* CARDS */
   .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:32px; }
   .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:32px; }
-  @media(max-width:600px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+  @media(max-width:700px){
+    .grid-2,.grid-3{grid-template-columns:1fr; gap:12px;}
+    .stats-3{grid-template-columns:1fr; gap:10px;}
+    .waves-row{flex-direction:column; gap:10px;}
+    .wave-card{min-width:unset;}
+    .page{padding:24px 16px 48px;}
+    h1{font-size:clamp(1.8rem,10vw,3.5rem);}
+    svg{max-width:100%;height:auto;}
+  }
+  @media(max-width:500px){
+    .richter-row{flex-wrap:wrap; gap:6px;}
+    .r-effect{min-width:unset;text-align:left;width:100%;}
+    .r-mag{min-width:28px;font-size:1.3rem;}
+  }
+  @media(max-width:420px){
+    .stat-n{font-size:2rem;}
+  }
 
   .card {
     background: rgba(12,18,32,.85);
